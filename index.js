@@ -5,7 +5,7 @@ const User = require("./model/user")
 connectDB()
 
 
-const port=3020;
+const port=process.env.PORT || 3020;
 const app= express();
 
 app.use(express.json());
